@@ -1,0 +1,114 @@
+.form {
+  background-color: #efeeee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 50%);
+  padding: 2rem;
+  color: #7b8ab8;
+}
+//box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color];
+.form__input {
+  width: 45%;
+  border-radius: 5px;
+  border: none;
+  &--name {
+    display: block;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #f0f5fa;
+    background-clip: padding-box;
+    border: 0 solid #bed1e6;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+    box-shadow: inset 2px 2px 8px rgba(55, 94, 148, 30%),
+      inset -3px -2px 5px rgba(255, 255, 255, 80%);
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    color: #7b8ab8;
+  }
+  &--email,&--phone {
+    // width: 45%;
+    // border-radius: 0.5em;
+    // background: #e8e8e8;
+    // border: 1px solid #e8e8e8;
+    // transition: all 0.3s;
+    // box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+    // margin-bottom: 1rem;
+    display: block;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #f0f5fa;
+    background-clip: padding-box;
+    border: 0 solid #bed1e6;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+    box-shadow: inset 2px 2px 8px rgba(55, 94, 148, 30%),
+      inset -3px -2px 5px rgba(255, 255, 255, 80%);
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  &--select {
+    display: block;
+    width: 100%;
+    padding: 1rem 4.5rem 1rem 1.5rem;
+    -moz-padding-start: calc(1.5rem - 3px);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #f0f5fa;
+    background-image: url("../img/down-chevron.svg");
+    background-repeat: no-repeat;
+    background-position: right 1.5rem center;
+    background-size: 16px 12px;
+    border: 0 solid #bed1e6;
+    border-radius: 0.25rem;
+    box-shadow: inset 2px 2px 8px rgba(55, 94, 148, 30%),
+      inset -3px -2px 5px rgba(255, 255, 255, 80%);
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    &::after {
+      content: "";
+    }
+  }
+  &--textarea {
+    min-height: calc(1.5em + 2rem);
+    display: block;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #7b8ab8;
+    background-color: #f0f5fa;
+    background-clip: padding-box;
+    border: 0 solid #bed1e6;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+    box-shadow: inset 2px 2px 8px rgba(55, 94, 148, 30%),
+      inset -3px -2px 5px rgba(255, 255, 255, 80%);
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    resize: vertical;
+    margin-top: 1rem;
+  }
+}
+
+*::placeholder {
+  text-align: center;
+  color: #7b8ab8;
+}

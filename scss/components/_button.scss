@@ -1,0 +1,19 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+.btn {
+  padding: 0.2rem 0.5rem;
+  margin: auto 0.5rem;
+  color: $brand-color;
+  border: 1px $brand-color solid;
+  border-radius: 5vh;
+  min-width: 85px;
+  text-align: center;
+  vertical-align: middle;
+}
+.btn:hover,
+.btn.active {
+  background-color: $brand-color;
+  color: white;
+  border-color: transparent;
+}

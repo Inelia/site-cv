@@ -1,0 +1,13 @@
+.nav {
+  display: flex;
+  margin: 2rem 3.5rem 1rem ;
+  /* width:20vw; */
+  justify-content: space-around;
+}
+.nav__item {
+  text-decoration: none;
+  color: black;
+  /* height:auto; */
+  position: relative;
+  z-index: 10;
+}

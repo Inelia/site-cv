@@ -1,0 +1,40 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  &:not(:last-child) {
+    margin-bottom: 2.5rem;
+  }
+  &-body {
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+  }
+  &-footer {
+    padding: 0.5rem 1rem;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
+    &:last-child {
+      border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px);
+    }
+  }
+}
+
+.card__figure {
+  margin: 0;
+  margin-bottom: -8px;
+}
+.card__link {
+  font-size: 0.7rem;
+}
+.card__title {
+  // position: absolute;
+  // top:45%;
+  justify-self: center;
+  align-self: center;
+}

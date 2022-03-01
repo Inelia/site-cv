@@ -1,0 +1,117 @@
+html {
+  font-size: 12px;
+}
+.test {
+  background: white;
+  // padding: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    font-size: 2rem;
+    margin-top: 15vh;
+    padding: 1rem;
+  }
+  h2 {
+    font-size: 1.25rem;
+    padding: 1rem 1rem 2rem;
+  }
+  h3 {
+    color: $brand-color;
+    margin: 0.5rem 0;
+  }
+
+  .avatar {
+    width: 150px;
+    border-radius: 50%;
+    text-align: center;
+  }
+  .presentation {
+    background-color: $brand-color;
+    color: white;
+    width: 100%;
+    padding: 1.5rem;
+    padding-bottom: 130px;
+  }
+  .presentation__title {
+    font-size: 1.5rem;
+  }
+  .presentation__text {
+    font-size: 1.25rem;
+  }
+  .skills {
+    border: 1px solid #4f9bd94b;
+    border-radius: 20px;
+    // box-shadow: 2px 2px 2px $brand-color, -2px 0 6px $brand-color;
+    margin-top: -100px;
+    padding: 1.5rem;
+    width: 80vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .skills__logo {
+    width: 20%;
+  }
+  .language {
+    margin: 1rem 0;
+    text-align: center;
+  }
+  .tools {
+    margin: 1rem 0;
+  }
+  .tools__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .desires {
+    padding: 1.5rem;
+  }
+
+  .desires__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.5rem;
+  }
+  .desires__img {
+    width: 20px;
+    height: 20px;
+  }
+  .portfolio {
+    // background-color: $brand-color, white;
+    background: linear-gradient(to bottom, $brand-color 230px, white 2px);
+    color: white;
+    width: 100%;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .portfolio__link {
+    width: 75%;
+    &:hover,
+    &:active,
+    &:focus {
+      color: inherit;
+      background-color: inherit;
+    }
+  }
+  .portfolio__card {
+    background-color: white;
+    justify-content: center;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    height: 150px;
+    border-radius: 25px;
+    border: #4f9bd94b solid 1px;
+  }
+  .portfolio__card:first-of-type {
+    margin-top: 2rem;
+  }
+}

@@ -1,4 +1,4 @@
-*.scss
-*.sass
+.sass-cache/*.scss
+.sass-cache/*.sass
 node_modules/*
 .vscode/*
