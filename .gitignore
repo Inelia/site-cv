@@ -1,0 +1,4 @@
+*.scss
+*.sass
+node_modules/*
+.vscode/*
