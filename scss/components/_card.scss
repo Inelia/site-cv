@@ -38,3 +38,7 @@
   justify-self: center;
   align-self: center;
 }
+.portfolio__link:hover .card__title {
+  color: white;
+  background-color: $brand-color;
+}
