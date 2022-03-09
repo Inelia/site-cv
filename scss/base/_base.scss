@@ -29,12 +29,11 @@ html {
 a {
   color: $brand-color;
   text-decoration: none;
-
-  @include on-event {
-    color: white;
-    background-color: $brand-color;
-    // text-decoration: underline;
-  }
+  // @include on-event {
+  //   color: white;
+  //   background-color: $brand-color;
+  //   // text-decoration: underline;
+  // }
 }
 /**
 * basic style
@@ -43,6 +42,7 @@ body {
   font-family: "Poppins", sans-serif;
   width: 100vw;
   max-width: 100%;
+  background-color: $light-grey;
 }
 main {
   display: flex;

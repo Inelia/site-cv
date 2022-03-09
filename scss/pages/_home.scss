@@ -1,27 +1,37 @@
 html {
   font-size: 12px;
 }
-.test {
+.index {
   background: white;
-  // padding: 1rem;
   padding-bottom: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   h1 {
-    font-size: 2rem;
-    margin-top: 15vh;
+    font-size: 2.5rem;
     padding: 1rem;
+
+    @include mobile {
+      margin-top: 7.5vh;
+    }
+    @include tablet {
+      margin-top: 10vh;
+    }
   }
   h2 {
-    font-size: 1.25rem;
+    font-size: 2rem;
     padding: 1rem 1rem 2rem;
   }
   h3 {
     color: $brand-color;
     margin: 0.5rem 0;
   }
-
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
   .avatar {
     width: 150px;
     border-radius: 50%;
@@ -33,6 +43,14 @@ html {
     width: 100%;
     padding: 1.5rem;
     padding-bottom: 130px;
+    @include mobile {
+      padding: 1.5rem 10%;
+      padding-bottom: 130px;
+    }
+    @include tablet {
+      padding: 1.5rem 10%;
+      padding-bottom: 130px;
+    }
   }
   .presentation__title {
     font-size: 1.5rem;
@@ -83,6 +101,53 @@ html {
     width: 20px;
     height: 20px;
   }
+
+  .past {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin: 1rem 0;
+  }
+  .formation,
+  .experience {
+    width: 256px;
+    border: #4f9bd94b solid 1px;
+    border-radius: 20px;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .formation__item,
+  .experience__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+  }
+  .formation__title,
+  .experience__title {
+    text-align: start;
+    width: 60%;
+    display: inline-block;
+    font-size: 1.15rem;
+  }
+  .formation__date,
+  .experience__date {
+    // width: 20%;
+    text-align: right;
+  }
+  .formation__description {
+    font-size: 1.05rem;
+  }
+  .experience__item h6 {
+    color: $brand-color;
+  }
+  .experience__item ul {
+    list-style: none;
+    font-size: 1.05rem;
+  }
+
   .portfolio {
     // background-color: $brand-color, white;
     background: linear-gradient(to bottom, $brand-color 230px, white 2px);

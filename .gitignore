@@ -1,4 +1,5 @@
 .sass-cache/*.scss
+.sass-cache/*.scssc
 .sass-cache/*.sass
 node_modules/*
 .vscode/*

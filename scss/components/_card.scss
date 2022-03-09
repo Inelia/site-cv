@@ -4,7 +4,7 @@
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
+  background-color: $light-grey;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
@@ -33,12 +33,11 @@
   font-size: 0.7rem;
 }
 .card__title {
-  // position: absolute;
-  // top:45%;
   justify-self: center;
   align-self: center;
+  font-size: 1.4rem;
 }
-.portfolio__link:hover .card__title {
-  color: white;
-  background-color: $brand-color;
-}
+// .portfolio__link:hover .card__title {
+//   color: white;
+//   background-color: $brand-color;
+// }
