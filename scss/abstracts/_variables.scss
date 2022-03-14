@@ -7,6 +7,11 @@
 $text-font-stack: "Open Sans", "Helvetica Neue Light", "Helvetica Neue",
   "Helvetica", "Arial", sans-serif !default;
 
+/// Title font family
+/// @type List
+$title-font-stack: "Oswald", "Courier New", "DejaVu Sans Mono",
+  "Bitstream Vera Sans Mono", "Monaco", monospace !default;
+
 /// Code (monospace) font family
 /// @type List
 $code-font-stack: "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono",
@@ -22,6 +27,10 @@ $brand-color: rgb(79, 155, 217) !default;
 
 /// Accent color
 $accent-color: rgb(37, 197, 223) !default;
+
+/// White
+/// @type Color
+$white: #f8f8f8;
 
 /// Light grey
 /// @type Color

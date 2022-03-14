@@ -15,6 +15,24 @@
   width: 45%;
   border-radius: 5px;
   border: none;
+  display: block;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #010101;
+  background-color: #f0f5fa;
+  background-clip: padding-box;
+  border: 0 solid #bed1e6;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.25rem;
+  box-shadow: inset 2px 2px 8px rgba(55, 94, 148, 30%),
+    inset -3px -2px 5px rgba(255, 255, 255, 80%);
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  // color: #7b8ab8;
   &--name {
     display: block;
     width: 100%;
@@ -32,9 +50,10 @@
     box-shadow: inset 2px 2px 8px rgba(55, 94, 148, 30%),
       inset -3px -2px 5px rgba(255, 255, 255, 80%);
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-    color: #7b8ab8;
+    // color: #7b8ab8;
   }
-  &--email,&--phone {
+  &--email,
+  &--phone {
     // width: 45%;
     // border-radius: 0.5em;
     // background: #e8e8e8;
@@ -92,7 +111,7 @@
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #7b8ab8;
+    color: #010101;
     background-color: #f0f5fa;
     background-clip: padding-box;
     border: 0 solid #bed1e6;
@@ -104,11 +123,10 @@
       inset -3px -2px 5px rgba(255, 255, 255, 80%);
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     resize: vertical;
-    margin-top: 1rem;
+    // margin-top: 1rem;
   }
 }
 
 *::placeholder {
-  text-align: center;
   color: #7b8ab8;
 }

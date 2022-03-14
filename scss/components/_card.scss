@@ -37,7 +37,9 @@
   align-self: center;
   font-size: 1.4rem;
 }
-// .portfolio__link:hover .card__title {
-//   color: white;
-//   background-color: $brand-color;
-// }
+.portfolio__link:hover .portfolio__card,
+.portfolio__link:focus   .portfolio__card {
+  color: white;
+  background-color: $brand-color;
+  border-color: $white;
+}

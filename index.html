@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,19 +9,25 @@
       content="En formation en tant que développeuse web, je cherche un stage du 22/07 au 22/09 . Curieuse, j'aime travailler en équipe et sachant travailler seule."
     />
     <title>Marie Agniel | Développeuse Web et Web Mobile</title>
-    <link rel="stylesheet" href="./assets/css/style-test.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
   <body class="index">
     <header class="header">
-      <h1>Développeuse Web et Web Mobile</h1>
+      <img src="./assets/img/logo-marie.svg" alt="ma trombine" class="avatar" />
+      <h1>Développeuse Web <br />et Web Mobile</h1>
       <h2>
         <!-- Nouvellement formée, je m'<b>adapte</b> à vos façons de travailler. -->
         J'ai <b>envie d'apprendre</b> et mettre en <b>pratique</b> mes
         connaissances.
       </h2>
-      <img src="./assets/img/logo-marie.svg" alt="ma trombine" class="avatar" />
     </header>
-    <article class="presentation">
+    <section class="presentation">
       <h2 class="presentation__title">Bonjour, je m'appelle Marie,</h2>
       <p class="presentation__text">
         Autodidacte dans le milieu du développement web, je suis actuellement
@@ -29,23 +35,24 @@
         Aformac. Pour valider mon titre, j'ai besoin d'effectuer un stage de 2
         mois, à partir du 22 juillet au 22 septembre 2022.
       </p>
-    </article>
-    <article class="skills">
+    </section>
+    <section class="skills">
       <img
         src="./assets/img/web-programming.svg"
         alt="logo coding"
         class="skills__logo"
       />
-      <h2>Développeuse Web Junior</h2>
+      <h2>Développeuse Web</h2>
       <p>
-        J'aime comprendre le fonctionnement les choses, les voir s'animer et
-        c'est encore mieux quand c'est beau.
+        J'aime comprendre le fonctionnement des choses et les voir s'animer.
       </p>
-      <section class="language">
+      et
+      <!-- c'est encore mieux quand c'est beau -->
+      <article class="language">
         <h3>Mes langages</h3>
         <p>HTML, CSS, SASS, PHP, MySQL, JS</p>
-      </section>
-      <!-- <section class="tools">
+      </article>
+      <!-- <article class="tools">
         <h3>Mes outils de développement :</h3>
         <ul class="tools__list">
           <li>VS Code</li>
@@ -53,8 +60,8 @@
           <li>Bootstrap</li>
           <li>Github</li>
         </ul>
-      </section> -->
-      <section class="desires">
+      </article> -->
+      <article class="desires">
         <h3>Ce que j'aimerai apprendre</h3>
         <p>
           Ceci est une liste non exhaustive de technologies que j'aimerai
@@ -82,48 +89,48 @@
             Vue.js
           </li>
         </ul>
-      </section>
-    </article>
-    <article class="past">
-      <section class="formation">
+      </article>
+    </section>
+    <section class="past">
+      <article class="formation">
         <h3>Formations</h3>
-        <article class="formation__item">
-          <h6 class="formation__title">Osengo</h6>
+        <section class="formation__item">
+          <h5 class="formation__title">Osengo</h5>
           <time datetime="2022" class="formation__date">2022</time>
           <p class="formation__description">
             Formation développeur web et web mobile
           </p>
-        </article>
-        <article class="formation__item">
-          <h6 class="formation__title">Formation 31</h6>
+        </section>
+        <section class="formation__item">
+          <h5 class="formation__title">Formation 31</h5>
           <time datetime="2021" class="formation__date">2021</time>
           <p class="formation__description">
             Formation développeur web et web mobile
           </p>
-        </article>
-        <article class="formation__item">
-          <h6 class="formation__title">Lycée Sully</h6>
+        </section>
+        <section class="formation__item">
+          <h5 class="formation__title">Lycée Sully</h5>
           <time datetime="2007" class="formation__date">2007</time>
           <p class="formation__description">
             Niveau bac Science et Technologie de l'Agronomie et de
             l'Environnement
           </p>
-        </article>
-      </section>
-      <section class="experience">
+        </section>
+      </article>
+      <article class="experience">
         <h3>Expériences</h3>
-        <article class="experience__item">
+        <section class="experience__item">
           <h5 class="experience__title">Hôtesse de caisse</h5>
-          <time datetime="PT3Y" class="experience__date">2017 - 2020</time>
+          <time datetime="PT26280H" class="experience__date">2017 - 2020</time>
           <h6>Intermarché, Aussillon</h6>
           <ul>
             <li>- Contrôler les produits lors du passage en caisse</li>
             <li>- Répondre aux questions des clients</li>
           </ul>
-        </article>
+        </section>
         <section class="experience__item">
           <h5 class="experience__title">Inventoriste</h5>
-          <time datetime="PT6Y" class="experience__date">2011 - 2017</time>
+          <time datetime="PT52560H" class="experience__date">2011 - 2017</time>
           <h6>Start People</h6>
           <ul>
             <li>- Comptage avec et sans douchette électronique</li>
@@ -131,16 +138,16 @@
         </section>
         <section class="experience__item">
           <h5 class="experience__title">Conjointe d'agriculteur</h5>
-          <time datetime="PT4Y" class="experience__date">2011 - 2015</time>
+          <time datetime="PT35040H" class="experience__date">2011 - 2015</time>
           <h6>Noailhac</h6>
           <ul>
             <li>- Soin des bêtes</li>
             <li>- Secrétariat et gestion de la comptabilité, facturation</li>
           </ul>
         </section>
-      </section>
-    </article>
-    <article class="portfolio">
+      </article>
+    </section>
+    <section class="portfolio">
       <h3>Ce que j'ai déjà réalisés</h3>
       <p>
         Voici quelques exemples de projets que j'ai développé pendant ma
@@ -168,10 +175,79 @@
           <figcaption class="card__title">Catherine Métais</figcaption>
         </figure>
       </a>
-    </article>
-    <article>
-      <h3><a href="mailto:agniel.marie@gmail.com">Me contacter</a></h3>
+    </section>
+    <section class="contact">
+      <a href="mailto:agniel.marie@gmail.com">Me contacter</a>
+      <!-- <button class="modal__contact-click" onclick="disableScroll()">
+        Me contacter
+      </button> -->
       <!-- <p>ici bientôt un formulaire de contact</p> -->
-    </article>
+      <article class="modal">
+        <form action="contact.php" method="POST" class="modal__contact">
+          <section class="modal__header">
+            <h3 class="modal__title">Contactez-moi</h3>
+            <button
+              type="button"
+              class="btn__close"
+              data-dismiss="modal__contact"
+              aria-label="Close"
+              onclick="enableScroll()"
+            ></button>
+          </section>
+          <section class="modal__body">
+            <label for="name" class="form__label"
+              >Prénom Nom
+              <input
+                type="text"
+                id="name"
+                class="form__input"
+                placeholder="John Doe"
+                required
+              />
+            </label>
+            <label for="email">
+              Email
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="form__input"
+                placeholder="email@exemple.fr"
+                required
+              />
+            </label>
+            <label for="phone"
+              >Téléphone
+              <input
+                type="tel"
+                id="phone"
+                class="form__input"
+                placeholder="01 23 45 67 89"
+                required
+              />
+            </label>
+            <label for="msg">Votre message</label>
+            <br /><textarea
+              name="msg"
+              id="msg"
+              placeholder="Bonjour, ..."
+              class="form__input--textarea"
+            ></textarea>
+          </section>
+          <section class="modal__footer">
+            <button
+              type="button"
+              class="btn modal__close"
+              onclick="enableScroll()"
+            >
+              Close
+            </button>
+            <input type="submit" value="Envoyer" class="btn" />
+          </section>
+        </form>
+      </article>
+    </section>
+    <script src="./assets/js/jquery-3.6.0.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>

@@ -1,36 +1,29 @@
 html {
-  font-size: 12px;
+  font-size: 16px;
 }
 .index {
-  background: white;
+  background: $light-grey;
   padding-bottom: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   h1 {
-    font-size: 2.5rem;
     padding: 1rem;
-
-    @include mobile {
-      margin-top: 7.5vh;
-    }
-    @include tablet {
-      margin-top: 10vh;
-    }
   }
   h2 {
-    font-size: 2rem;
     padding: 1rem 1rem 2rem;
-  }
-  h3 {
-    color: $brand-color;
-    margin: 0.5rem 0;
   }
   .header {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 2rem;
+    @include mobile {
+      padding-top: 7.5vh;
+    }
+    @include tablet {
+      padding-top: 10vh;
+    }
   }
   .avatar {
     width: 150px;
@@ -41,10 +34,10 @@ html {
     background-color: $brand-color;
     color: white;
     width: 100%;
-    padding: 1.5rem;
+    padding: 1.8rem;
     padding-bottom: 130px;
     @include mobile {
-      padding: 1.5rem 10%;
+      padding: 1.5rem 9%;
       padding-bottom: 130px;
     }
     @include tablet {
@@ -57,6 +50,7 @@ html {
   }
   .presentation__text {
     font-size: 1.25rem;
+    text-align: justify;
   }
   .skills {
     border: 1px solid #4f9bd94b;
@@ -89,7 +83,6 @@ html {
   .desires {
     padding: 1.5rem;
   }
-
   .desires__list {
     list-style: none;
     display: flex;
@@ -101,20 +94,19 @@ html {
     width: 20px;
     height: 20px;
   }
-
   .past {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
-    margin: 1rem 0;
+    margin: 2rem 0 1rem;
   }
   .formation,
   .experience {
     width: 256px;
     border: #4f9bd94b solid 1px;
     border-radius: 20px;
-    padding: 0.5rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
   }
@@ -130,21 +122,16 @@ html {
     text-align: start;
     width: 60%;
     display: inline-block;
-    font-size: 1.15rem;
   }
   .formation__date,
   .experience__date {
-    // width: 20%;
     text-align: right;
   }
-  .formation__description {
-    font-size: 1.05rem;
-  }
+
   .experience__item h6 {
     color: $brand-color;
   }
   .experience__item ul {
-    list-style: none;
     font-size: 1.05rem;
   }
 
@@ -178,5 +165,9 @@ html {
   }
   .portfolio__card:first-of-type {
     margin-top: 2rem;
+  }
+  .contact {
+    position: relative;
+    width: 100%;
   }
 }
